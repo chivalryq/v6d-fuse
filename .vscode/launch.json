@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "v6d-fuse",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+           "preLaunchTask": "create-mount-dir",
+            "postDebugTask": "remove-mount-dir",
+            
+            "program": "${workspaceFolder}/main.go",
+            "args": ["--debug", "/mnt/memfs/", "/tmp/memfs/"]
+        }
+    ]
+}

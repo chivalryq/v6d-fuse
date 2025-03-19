@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "create-mount-dir",
+            "type": "shell",
+            "command": "mkdir -p /mnt/v6dfs || true",
+            "presentation": {
+                "reveal": "silent"
+            }
+        },
+        {
+            "label": "remove-mount-dir",
+            "type": "shell",
+            "command": "fusermount -u /mnt/v6dfs/",
+            "presentation": {
+                "reveal": "silent"
+            }
+        }
+    ]
+}
